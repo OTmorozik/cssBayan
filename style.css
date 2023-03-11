@@ -12,13 +12,21 @@ html{
 
 body{
     font-size: 20px;
+    background-color: rgb(199, 198, 198);
+    max-width: 1920px;
 }
 
 .mem{
     max-width: 1920px;
-    height: 1080px;
     margin: 0 auto;
-    background-color: rgb(199, 198, 198);
+}
+
+.mem-item{
+    transition: 1s;
+}
+
+h1{
+    text-align: center;
 }
 
 .mem-title{
@@ -26,9 +34,11 @@ body{
     cursor: pointer;
     transition: background .2s;
     position: relative;
+    text-align: center;
+    transition: 1s ease-in-out;
 }
 
-.mem-title::after{
+/* .mem-title::after{
         content: "";
         display: block;
         border-style: solid;
@@ -37,7 +47,7 @@ body{
         position: absolute;
         top: 50%;
         left: 50%;
-    }
+    } */
 
 
 .mem-title:hover{
@@ -54,10 +64,16 @@ body{
     appearance: none;
 }
 
+.mem-content{
+    text-align: center;
+}
 
 
 .image{
     display: none;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 1s ease-in-out;
 }
 
 .mem-input:hover + .image{
